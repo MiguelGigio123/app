@@ -59,7 +59,7 @@ input,select,textarea{border-radius:9px}
 (()=>{'use strict';
 const $=id=>document.getElementById(id), KEY='levelup_single_file_v1';
 // Configure estes dois valores com as credenciais públicas do seu projeto Supabase.
-const SUPABASE_URL='https://clnmntxvpgtvdfwklxma.supabase.co/rest/v1/';
+const SUPABASE_URL='https://clnmntxvpgtvdfwklxma.supabase.co';
 const SUPABASE_ANON_KEY='sb_publishable_ClRI8h6HVUr0e4hB5F7JhA_9s78rBxO';
 const cloudReady=!!(window.supabase&&/^https:\/\//.test(SUPABASE_URL)&&!SUPABASE_URL.includes('COLE_AQUI')&&SUPABASE_ANON_KEY&&!SUPABASE_ANON_KEY.includes('COLE_AQUI'));
 const cloud=cloudReady?window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
